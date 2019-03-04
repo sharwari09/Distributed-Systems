@@ -2,7 +2,6 @@
 
 Spartan Messenger using GRPC in Python3
 
-Reference: https://github.com/sithu/cmpe273-fall18/tree/master/assignments/assignment1
 
 Implementation of the following are supported:
 
