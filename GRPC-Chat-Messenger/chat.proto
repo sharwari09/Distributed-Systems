@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package messenger;
+
+service SpartanMessenger {
+  rpc LoginUser (User) returns (Groups) {}
+  rpc ReceiveMessage (Message) returns (stream Message) {}
+}
+
+message Message {
+  string sender = 1;
+  string recipient = 2;
+  bytes msg = 3;
+  uint64 msgid = 4;
+}
+
+message User {
+   string name = 1;
+   uint64 lastseen = 2;
+}
+
+message Group {
+   repeated User users = 1;
+   string groupid = 2;
+   bool isgroup = 3;
+   int64 lastmsgid = 4;
+}
+
+message Groups {
+   repeated Group groups = 1;
+}
+

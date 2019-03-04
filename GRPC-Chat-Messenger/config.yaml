@@ -1,0 +1,7 @@
+# 1-1 messaging
+users: [alice,bob,charlie,foo,bar]
+
+# Group messaging
+groups:
+ cab: [alice,bob,charlie]
+ fb: [foo,bar]
